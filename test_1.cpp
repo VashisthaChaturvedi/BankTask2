@@ -35,7 +35,7 @@ void crtacc()
         else if(accnum == AccNums[j])
         {
             crtacc();
-        }
+        }// to eliminate the condition that account created might generate two same account number
 
     }
     string accname;
@@ -181,7 +181,7 @@ void withdraw()
         {
             if(pin == AccPins[j])
             {
-                cout <<"Withdarwing Securely ...\n";
+                cout <<"Withdarwn Securely ...\n";
                 AccMoney[j]-=money;
                 break;
 
@@ -196,7 +196,7 @@ void withdraw()
     }
     else if (money>AccMoney[i])
     {
-        cout << "Not enough Monney. POOR!"<<endl;
+        cout << "Not enough Monney. poor !"<<endl;
     }
     main();
 
@@ -259,7 +259,7 @@ void transfer()
             {
                 if(pin == AccPins[j])
                 {
-                    cout <<"Paying Securely ...\n";
+                    cout <<"Paied Securely ...\n";
                     AccMoney[k]+=money;
                     AccMoney[j]-=money;
                     break;
